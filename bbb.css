@@ -1,0 +1,184 @@
+ body{
+    background-color: #f0f2f5;
+    font-family: 'open sans', sans serif;
+    padding-top: 50px;
+    background-image: 
+        linear-gradient(rgba(97, 150, 123, 0.65), rgba(255,255,255,0.65)),
+        url("l.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+ }
+
+ .container{
+             max-width: 1000px;
+           min-height: 500px;
+       background-color: #ffffff;
+          padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(63, 124, 112, 0.1);
+         max-width: 1100px;
+    margin: 50px auto;
+        }
+        .rheader{
+            text-align: center;
+            color:  #2b5951;
+            margin-bottom: 30px;
+        }
+        .rheader h2{
+            font-weight: 800;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .rheader h2:hover {
+    transform: translateY(-3px);
+    letter-spacing: 2.5px;
+      }    
+        .formgroup label{
+            font-weight: 600;
+            color: #2b5951;
+            display: block;
+            font-size: 15px;
+            margin-bottom: 8px;
+             letter-spacing: 0.3px;
+        }
+
+        .formgroup input, formgroup select, formgroup textarea{
+            padding-left: 40px;
+            border-radius: 8px;
+            border: 1px solid #000;
+            box-shadow: none;
+            transition: border-color 0.3s;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+       
+        .formgroup{
+            position: relative;
+            margin-bottom: 20px;
+        }
+       .form-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.form-row .col-md-6 {
+    flex: 1;
+    width: auto;
+}
+   .btn-submit{
+    width: 100%;
+    padding: 14px;
+    background-color: #2b5951;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: border-color 0.3s;
+
+   }
+   .btn-submit:hover{
+    background-color: #345648;
+    cursor: pointer;
+   }
+   .formgroup textarea{
+    border-radius:8px ;
+    resize: vertical;
+     width: 100%;
+    min-height: 120px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+   }
+   .formgroup select{
+    border-radius: 8px;
+
+   }
+   @media (max-width: 767px){
+    .rheader h2{
+        font-size: 24px;
+    }
+     .formgroup input, .formgroup select, .formgroup textarea{
+        width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+     }
+   }
+   .formgroup input,
+.formgroup select {
+    width: 100%;
+    height: 50px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.event-details {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.event-details img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-info h3 {
+    color: #2b5951;
+    margin-bottom: 25px;
+}
+
+.event-info p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.reserve-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 30px;
+    background-color: #2b5951;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.reserve-btn:hover {
+    background-color: #345648;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .event-details {
+        display: block;
+        text-align: center;
+    }
+
+    .event-details img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .event-info {
+        text-align: left;
+    }
+}
+
+
+

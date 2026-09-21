@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 1px solid #eef0f2;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2b5951;
+    text-decoration: none;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btnconnecter {
+    border: 1px solid #cbd5e0;
+    color: #2d3748;
+}
+
+.btnsinscrire {
+    background-color: #2b5951;
+    color: white;
+    border: 1px solid #2b5951;
+}
+
+.btnconnecter:hover {
+    background-color: #2b5951;
+    color: white;
+}
+
+.btnsinscrire:hover {
+    background-color: #21443e;
+}
+
+
+/* PAGE */
+
+.page-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+/* CARD */
+
+.login-card {
+    background-color: white;
+    width: 100%;
+    max-width: 480px;
+    padding: 45px 40px;
+    border-radius: 12px;
+    border: 1px solid #edf2f7;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.card-line {
+    width: 30px;
+    height: 3px;
+    background-color: #2b5951;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.login-card h2 {
+    font-size: 28px;
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #718096;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    color: #2d3748;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #2b5951;
+    box-shadow: 0 0 0 3px rgba(43,89,81,0.1);
+}
+
+
+/* BUTTON */
+
+.submit {
+    width: 100%;
+    background-color: #2b5951;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit:hover {
+    background-color: #21443e;
+}
+
+
+/* ERROR */
+
+.error {
+    background-color: #fff5f5;
+    color: #b72222;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 25px;
+    border: 1px solid #feb2b2;
+}
+
+
+/* SUCCESS */
+
+.success {
+    background-color: #f0fff4;
+    color: #276749;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 25px;
+    border: 1px solid #9ae6b4;
+}
+
+
+/* CODE DE TEST */
+
+.demo-code {
+    background-color: #fffbeb;
+    color: #975a16;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.demo-code strong {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+/* RETOUR */
+
+.back {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.back a {
+    color: #2b5951;
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
+
+/* BUTTON RETOUR CONNEXION */
+
+.submit-link {
+    width: 100%;
+    background-color: #2b5951;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+.submit-link:hover {
+    background-color: #21443e;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .page-center {
+        padding: 20px;
+    }
+
+    .login-card {
+        padding: 30px 25px;
+    }
+
+    .nav-buttons a {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+}
